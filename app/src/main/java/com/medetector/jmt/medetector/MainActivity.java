@@ -32,14 +32,16 @@ public class MainActivity extends Activity implements View.OnClickListener{
 
         switch(id) {
             case R.id.button_imageSearch:
-                Intent intent = new Intent(MainActivity.this, ImageSearchActivity.class);
-                startActivity(intent);
+                Intent intent_imageSearch = new Intent(MainActivity.this, ImageSearchActivity.class);
+                startActivity(intent_imageSearch);
                 break;
             case R.id.button_categorySearch:
-                Toast.makeText (MainActivity.this, "Coming Soon", Toast.LENGTH_SHORT).show();
+                Intent intent_categorySearch= new Intent(MainActivity.this, CategorySearchActivity.class);
+                startActivity(intent_categorySearch);
                 break;
             case R.id.button_textSearch:
-                Toast.makeText (MainActivity.this, "Coming Soon", Toast.LENGTH_SHORT).show();
+                Intent intent_textSearch = new Intent(MainActivity.this, textSearchActivity.class);
+                startActivity(intent_textSearch);
             case R.id.button_myPage:
                 Toast.makeText (MainActivity.this, "Coming Soon", Toast.LENGTH_SHORT).show();
                 break;
