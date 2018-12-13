@@ -4,15 +4,124 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/colorLightGreen">
 
     <TextView
+        android:id="@+id/textView_mainTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="80dp"
+        android:text="MEDITECTOR"
+        android:textSize="35dp"
+        android:textColor="@color/colorDarkGreen"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/button_imageSearch"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/button_categorySearch"
+        app:layout_constraintTop_toBottomOf="@+id/textView_mainTitle"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintVertical_chainStyle="packed"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/selector_imagesearch"/>
+
+    <TextView
+        android:id="@+id/textView_imageSearch"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/textView_categorySearch"
+        app:layout_constraintTop_toBottomOf="@+id/button_imageSearch"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintVertical_chainStyle="packed"
+        android:layout_marginTop="5dp"
+        android:text="Image Search"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/button_categorySearch"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintLeft_toRightOf="@id/button_imageSearch"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_mainTitle"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintVertical_chainStyle="packed"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/selector_categorysearch"/>
+
+    <TextView
+        android:id="@+id/textView_categorySearch"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/textView_imageSearch"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_categorySearch"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintVertical_chainStyle="packed"
+        android:layout_marginTop="5dp"
+        android:text="Category Search"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/button_textSearch"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/button_myPage"
+        app:layout_constraintTop_toBottomOf="@+id/textView_imageSearch"
+        app:layout_constraintBottom_toTopOf="@+id/textView_textSearch"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintVertical_chainStyle="packed"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/selector_textsearch"/>
+
+    <TextView
+        android:id="@+id/textView_textSearch"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toLeftOf="@+id/textView_myPage"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_textSearch"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintVertical_chainStyle="packed"
+        android:layout_marginTop="5dp"
+        android:text="Text Search"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/button_myPage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintLeft_toRightOf="@+id/button_textSearch"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_categorySearch"
+        app:layout_constraintBottom_toTopOf="@+id/textView_myPage"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintVertical_chainStyle="packed"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/selector_mypage"/>
+
+    <TextView
+        android:id="@+id/textView_myPage"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/textView_textSearch"
+        app:layout_constraintTop_toBottomOf="@id/button_myPage"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintVertical_chainStyle="packed"
+        android:layout_marginTop="5dp"
+        android:text="My Page"
+        android:gravity="center"/>
 
 </android.support.constraint.ConstraintLayout>
