@@ -31,6 +31,9 @@
         <activity android:name="com.yongchun.library.view.ImageCropActivity"/>
 
         <activity android:name=".CategorySearchActivity"> </activity>
+        <activity android:name=".textSearchActivity"> </activity>
+
+        <activity android:name=".ResultActivity"> </activity>
 
     </application>
 
